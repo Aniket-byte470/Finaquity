@@ -46,6 +46,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-link.active {
@@ -63,16 +64,17 @@
 .login-btn {
   background-color: #00aa5b;
   color: white;
-  padding: 10px 25px;
+  padding: 14px 30px;
   border: none;
   border-radius: 12px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 
 .login-btn:hover {
-  background-color: #009850;
+  background-color: #09c46d;
 }
 
 /* Responsive Design */

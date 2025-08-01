@@ -3,6 +3,10 @@ import img1 from "../Images/img1.avif";
 import img2 from "../Images/img2.avif";
 import img3 from "../Images/img3.avif";
 import img4 from "../Images/img4.avif";
+import Portfolio from "./Portfolio";
+import WeeklyProgress from "./WeeklyProgress";
+import AutomatedGraph from "./AutomatedGraph";
+import TotalViewsChart from "./TotalViewsChart";
 
 const LongTermFeatures = () => {
   return (
@@ -21,11 +25,9 @@ const LongTermFeatures = () => {
       <div className="longterm-wrapper-box">
         <div className="longterm-inner-grid">
           <div className="longterm-card card-ai">
-            <img
-              src={img1}
-              alt="AI-Driven Portfolio Optimization"
-              className="longterm-image"
-            />
+            <div className="longterm-portfolio-container">
+              <Portfolio />
+            </div>
             <h3 className="longterm-card-title">
               AI-Driven Portfolio
               <br />
@@ -38,11 +40,9 @@ const LongTermFeatures = () => {
           </div>
 
           <div className="longterm-card card-mutual">
-            <img
-              src={img2}
-              alt="Mutual Fund & ETF Analysis"
-              className="longterm-image"
-            />
+            <div className="longterm-portfolio-container">
+              <WeeklyProgress />
+            </div>
             <h3 className="longterm-card-title">Mutual Fund & ETF Analysis</h3>
             <p className="longterm-card-description">
               AI ranks the best-performing mutual funds & ETFs,
@@ -51,11 +51,9 @@ const LongTermFeatures = () => {
           </div>
 
           <div className="longterm-card card-rebalance">
-            <img
-              src={img3}
-              alt="Automated Rebalancing & Risk Hedging"
-              className="longterm-image"
-            />
+            <div className="longterm-portfolio-container">
+              <AutomatedGraph />
+            </div>
             <h3 className="longterm-card-title">
               Automated Rebalancing &<br /> Risk Hedging
             </h3>
@@ -67,11 +65,9 @@ const LongTermFeatures = () => {
           </div>
 
           <div className="longterm-card card-macro">
-            <img
-              src={img4}
-              alt="Macroeconomic & Fundamental Insights"
-              className="longterm-image"
-            />
+            <div className="longterm-portfolio-container">
+              <TotalViewsChart />
+            </div>
             <h3 className="longterm-card-title">
               Macroeconomic & <br />
               Fundamental Insights

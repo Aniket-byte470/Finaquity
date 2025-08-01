@@ -25,11 +25,11 @@ const Footer = () => {
         <div className="container">
           <div className="animation-left">
             <div
-              style={{ width: "100%", height: "40vh", position: "relative" }}
+              style={{ width: "100%", height: "50vh", position: "relative" }}
             >
               <Particles
                 particleColors={["#ffffff", "#ffffff"]}
-                particleCount={350}
+                particleCount={500}
                 particleSpread={10}
                 speed={0.1}
                 particleBaseSize={100}
@@ -41,11 +41,11 @@ const Footer = () => {
           </div>
           <div className="animation-right">
             <div
-              style={{ width: "100%", height: "40vh", position: "relative" }}
+              style={{ width: "100%", height: "50vh", position: "relative" }}
             >
               <Particles
                 particleColors={["#ffffff", "#ffffff"]}
-                particleCount={350}
+                particleCount={500}
                 particleSpread={10}
                 speed={0.1}
                 particleBaseSize={100}

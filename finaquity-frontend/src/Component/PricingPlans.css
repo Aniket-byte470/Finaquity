@@ -41,10 +41,15 @@
 /* Individual Card */
 .pricing-card {
   backdrop-filter: blur(8px);
-  border: 2px solid silver;
+  border: 1px solid silver;
   border-radius: 1rem;
   padding: 2rem;
   transition: transform 0.3s ease;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 30, 30, 0.9),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .pricing-card:hover {
@@ -52,12 +57,13 @@
 }
 
 .popular-badge {
-  background-color: rgba(73, 72, 72, 0.5);
+  background-color: none;
   color: white;
   padding: 0.35rem 0.95rem;
   border-radius: 12px;
   font-size: 0.875rem;
   font-weight: 600;
+  border: 1px solid white;
 }
 
 /* Card Content */
@@ -182,6 +188,8 @@
   color: #9ca3af;
   margin-bottom: 1.5rem;
   font-weight: 500;
+  text-align: center;
+  width: 100%;
 }
 
 .info-icon {
@@ -236,6 +244,8 @@
   font-weight: 600;
   margin: auto;
   background: linear-gradient(135deg, #101010 0%, #000000 50%, #101010 100%);
+  border-radius: 50px;
+  padding: 12px;
 }
 
 /* Responsive Design */

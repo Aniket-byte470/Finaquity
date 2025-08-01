@@ -1,15 +1,15 @@
 .landing-container {
   position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 83vh;
   overflow: hidden;
   background-color: black;
 }
 
 .globe-container {
   width: 100%;
-  max-width: 900px;
-  height: 600px;
+  max-width: 1000px;
+  height: 660px;
   margin: 40px auto 0;
   position: relative;
   z-index: 1;
@@ -36,8 +36,22 @@
   transform: translateY(10px);
 }
 
-.get-started-btn {
+.get-started-btn-globe {
   margin-top: 20px;
   padding: 12px 24px;
   font-size: 16px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.get-started-btn-globe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }

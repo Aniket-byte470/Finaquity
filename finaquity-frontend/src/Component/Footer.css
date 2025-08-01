@@ -27,9 +27,9 @@
   width: 6rem;
   height: 100%;
   pointer-events: none;
-  border-right: 1px solid #b4b5b6;
+  /* border-right: 1px solid #b4b5b6;
   border-bottom: 1px solid #9ca3af;
-  border-bottom-right-radius: 30px;
+  border-bottom-right-radius: 30px; */
 }
 
 .animation-right {
@@ -39,9 +39,9 @@
   width: 6rem;
   height: 100%;
   pointer-events: none;
-  border-left: 1px solid #9ca3af;
+  /* border-left: 1px solid #9ca3af;
   border-bottom: 1px solid #9ca3af;
-  border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 30px; */
 }
 
 .container {

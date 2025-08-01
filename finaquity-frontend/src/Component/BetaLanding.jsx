@@ -59,7 +59,7 @@ const BetaLanding = () => {
                   onClick={handleSubmit}
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
-                  className={`get-started-btn ${isHovered ? "hovered" : ""}`}
+                  className={`get-started-btn- ${isHovered ? "hovered" : ""}`}
                 >
                   Get Started
                 </button>

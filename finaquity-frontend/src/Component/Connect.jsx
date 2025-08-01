@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Globe from "./Globe";
 import "./Connect.css";
+import Particles from "../Particles/Particles";
 
 const Connect = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -20,7 +21,7 @@ const Connect = () => {
             <br />
             Market Genomics
           </h1>
-          <button className="get-started-btn">Get started</button>
+          <button className="get-started-btn-globe">Get started</button>
 
           <div className="globe-container">
             <Globe />

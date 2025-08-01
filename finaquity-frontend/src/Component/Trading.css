@@ -1,12 +1,12 @@
 /* Base Section */
-.trading-section {
+.trade-section {
   background: #000;
   color: #fff;
   padding: 2rem;
   text-align: center;
 }
 
-.badge {
+.trade-badge {
   background: #1a1a1a;
   padding: 0.4rem 1rem;
   border-radius: 8px;
@@ -16,14 +16,14 @@
   border: 0.7px solid white;
 }
 
-.title {
+.trade-title {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 700;
   margin-bottom: 3rem;
   line-height: 1.2;
 }
 
-.cards-container {
+.trade-cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,7 +32,7 @@
 }
 
 /* Card Styles */
-.card {
+.trade-card {
   padding: 1rem 1.5rem 0;
   border-radius: 1.5rem;
   max-width: 380px;
@@ -44,26 +44,26 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.trade-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
   border-color: white;
 }
 
-.card h3 {
+.trade-card h3 {
   font-weight: 450;
   margin-bottom: 15px;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
-.card p {
+.trade-card p {
   font-size: clamp(0.75rem, 2vw, 0.8rem);
   font-weight: 400;
   line-height: 1.4;
 }
 
 /* Browser Frame */
-.browser-frame {
+.trade-browser-frame {
   background: #2a2a2a;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -71,7 +71,7 @@
   height: 200px;
 }
 
-.browser-header {
+.trade-browser-header {
   display: flex;
   gap: 0;
   margin-bottom: 0.5rem;
@@ -82,25 +82,25 @@
   height: 14px;
 }
 
-.browser-header .dot {
+.trade-browser-header .trade-dot {
   width: 5px;
   height: 5px;
   border-radius: 50%;
   margin: auto 0 auto 10px;
 }
 
-.dot.red {
+.trade-dot.trade-red {
   background-color: #ff5f57;
 }
-.dot.yellow {
+.trade-dot.trade-yellow {
   background-color: #ffbd2e;
 }
-.dot.green {
+.trade-dot.trade-green {
   background-color: #28c840;
 }
 
 /* Browser Content Layout */
-.browser-content.grid-2 {
+.trade-browser-content.trade-grid-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 1fr));
   grid-template-rows: repeat(2, minmax(80px, 1fr));
@@ -109,25 +109,25 @@
   width: 330px;
 }
 
-.chart-box {
+.trade-chart-box {
   background: #444;
   border-radius: 8px;
   height: 80px;
   padding: 8px;
 }
 
-.bar_ {
+.trade-bar {
   margin-left: 45px;
 }
 
-.text-box {
+.trade-text-box {
   background: #444;
   border-radius: 8px;
   height: 80px;
   grid-row: 2;
 }
 
-.target-box {
+.trade-target-box {
   background: #666;
   border-radius: 8px;
   grid-column: 2;
@@ -135,7 +135,7 @@
 }
 
 /* Code Box Styling */
-.code-box_ {
+.trade-code-box {
   background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
   font-size: 0.85rem;
   color: #ccc;
@@ -145,7 +145,7 @@
 }
 
 /* System UI */
-.system-ui {
+.trade-system-ui {
   display: flex;
   gap: 0.4rem;
   height: 178px;
@@ -153,14 +153,14 @@
   width: 330px;
 }
 
-.sidebar {
+.trade-sidebar {
   background-color: #636060;
   border-radius: 17px;
   width: 50%;
   padding: 5px;
 }
 
-.menu-item {
+.trade-menu-item {
   padding: 0.2rem 0.8rem;
   border-radius: 8px;
   margin: 6px 0 0.7rem;
@@ -170,12 +170,12 @@
   transition: background 0.3s ease;
 }
 
-.menu-item.active {
+.trade-menu-item.trade-active {
   background-color: gray;
   color: #fff;
 }
 
-.status-panel {
+.trade-status-panel {
   background-color: #636060;
   color: #eee;
   border-radius: 12px;
@@ -186,19 +186,19 @@
   width: 50%;
 }
 
-.status-icon {
+.trade-status-icon {
   font-size: 1rem;
   color: white;
 }
 
-.rotating-icon {
+.trade-rotating-icon {
   color: white;
   display: flex;
   align-items: end;
   justify-content: center;
 }
 
-.status-line {
+.trade-status-line {
   background: #333;
   height: 5px;
   width: 100%;
@@ -207,14 +207,14 @@
   position: relative;
 }
 
-.line-fill {
+.trade-line-fill {
   width: 30%;
   height: 100%;
   background: white;
   border-radius: 4px;
 }
 
-.status-label {
+.trade-status-label {
   font-size: 0.9rem;
   color: #fff;
   font-weight: 300;
@@ -223,84 +223,84 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .trading-section {
+  .trade-section {
     padding: 1.5rem 1rem;
   }
 
-  .title {
+  .trade-title {
     margin-bottom: 2rem;
   }
 
-  .cards-container {
+  .trade-cards-container {
     gap: 1.5rem;
     margin-top: 60px;
   }
 
-  .card {
+  .trade-card {
     max-width: 100%;
     height: auto;
     min-height: 350px;
     padding: 1rem;
   }
 
-  .browser-frame {
+  .trade-browser-frame {
     max-width: 100%;
     height: auto;
     min-height: 200px;
   }
 
-  .browser-content.grid-2,
-  .code-box_,
-  .system-ui {
+  .trade-browser-content.trade-grid-2,
+  .trade-code-box,
+  .trade-system-ui {
     width: 100%;
     max-width: 100%;
   }
 
-  .browser-content.grid-2 {
+  .trade-browser-content.trade-grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .bar_ {
+  .trade-bar {
     margin-left: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .trading-section {
+  .trade-section {
     padding: 1rem;
   }
 
-  .card {
+  .trade-card {
     padding: 0.75rem;
   }
 
-  .card h3 {
+  .trade-card h3 {
     margin-bottom: 10px;
   }
 
-  .browser-content.grid-2 {
+  .trade-browser-content.trade-grid-2 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 80px);
     gap: 0.3rem;
   }
 
-  .target-box {
+  .trade-target-box {
     grid-column: 1;
     grid-row: 3;
   }
 
-  .system-ui {
+  .trade-system-ui {
     flex-direction: column;
     height: auto;
     min-height: 178px;
   }
 
-  .sidebar,
-  .status-panel {
+  .trade-sidebar,
+  .trade-status-panel {
     width: 100%;
   }
 
-  .bar_ {
+  .trade-bar {
     margin-left: 10px;
   }
 }

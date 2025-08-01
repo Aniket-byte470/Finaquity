@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="navbar-wrapper">
       <GlassSurface
-        width={1100}
+        width={1180}
         height={60}
         borderRadius={20}
         className="navbar-glass"

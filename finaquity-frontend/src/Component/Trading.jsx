@@ -6,30 +6,30 @@ import { FiRefreshCw } from "react-icons/fi";
 
 const Trading = () => {
   return (
-    <section className="trading-section">
-      <div className="badge">Accessing</div>
-      <h2 className="title">
+    <section className="trade-section">
+      <div className="trade-badge">Accessing</div>
+      <h2 className="trade-title">
         Why Do 90% of Market Participants Find <br />
         Trading Difficult?
       </h2>
 
-      <div className="cards-container">
+      <div className="trade-cards-container">
         {/* Card 1 */}
-        <div className="card">
-          <div className="browser-frame">
-            <div className="browser-header">
-              <span className="dot red" />
-              <span className="dot yellow" />
-              <span className="dot green" />
+        <div className="trade-card">
+          <div className="trade-browser-frame">
+            <div className="trade-browser-header">
+              <span className="trade-dot trade-red" />
+              <span className="trade-dot trade-yellow" />
+              <span className="trade-dot trade-green" />
             </div>
-            <div className="browser-content grid-2">
-              <div className="chart-box">
-                <div className="bar_">
+            <div className="trade-browser-content trade-grid-2">
+              <div className="trade-chart-box">
+                <div className="trade-bar">
                   <MyBarChart />
                 </div>
               </div>
-              <div className="target-box" />
-              <div className="text-box" />
+              <div className="trade-target-box" />
+              <div className="trade-text-box" />
             </div>
           </div>
           <h3>Market is Unpredictable</h3>
@@ -41,14 +41,14 @@ const Trading = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="card">
-          <div className="browser-frame">
-            <div className="browser-header">
-              <span className="dot red" />
-              <span className="dot yellow" />
-              <span className="dot green" />
+        <div className="trade-card">
+          <div className="trade-browser-frame">
+            <div className="trade-browser-header">
+              <span className="trade-dot trade-red" />
+              <span className="trade-dot trade-yellow" />
+              <span className="trade-dot trade-green" />
             </div>
-            <div className="browser-content code-box_">
+            <div className="trade-browser-content trade-code-box">
               <code>
                 <TextType
                   text={[
@@ -72,37 +72,34 @@ const Trading = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="card">
-          <div className="browser-frame">
-            <div className="browser-header">
-              <span className="dot red" />
-              <span className="dot yellow" />
-              <span className="dot green" />
+        <div className="trade-card">
+          <div className="trade-browser-frame">
+            <div className="trade-browser-header">
+              <span className="trade-dot trade-red" />
+              <span className="trade-dot trade-yellow" />
+              <span className="trade-dot trade-green" />
             </div>
-            <div className="browser-content system-ui">
-              <div className="sidebar">
-                <div className="menu-item active">Efficiency</div>
-                <div className="menu-item">Speed</div>
-                <div className="menu-item">Accuracy</div>
-                <div className="menu-item">Security</div>
+            <div className="trade-browser-content trade-system-ui">
+              <div className="trade-sidebar">
+                <div className="trade-menu-item trade-active">Efficiency</div>
+                <div className="trade-menu-item">Speed</div>
+                <div className="trade-menu-item">Accuracy</div>
+                <div className="trade-menu-item">Security</div>
               </div>
-              <div className="status-panel">
-                {/* Static label */}
-                <div className="status-icon">Status:</div>
+              <div className="trade-status-panel">
+                <div className="trade-status-icon">Status:</div>
 
-                {/* Rotating arrow icon */}
                 <motion.div
-                  className="rotating-icon"
+                  className="trade-rotating-icon"
                   animate={{ rotate: 360 }}
                   transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
                 >
                   <FiRefreshCw size={30} />
                 </motion.div>
 
-                {/* Animated red line */}
-                <div className="status-line">
+                <div className="trade-status-line">
                   <motion.div
-                    className="line-fill"
+                    className="trade-line-fill"
                     animate={{ x: ["-100%", "200%"] }}
                     transition={{
                       repeat: Infinity,
@@ -112,8 +109,7 @@ const Trading = () => {
                   />
                 </div>
 
-                {/* Pulsing warning text */}
-                <div className="status-label">Unsecure Trade</div>
+                <div className="trade-status-label">Unsecure Trade</div>
               </div>
             </div>
           </div>
